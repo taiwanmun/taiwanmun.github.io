@@ -21,7 +21,29 @@
 			<link rel="stylesheet" href="css/style-xlarge.css" />
 		</noscript>
 	</head>
-	<body id="top">
+
+
+	<script>
+
+	var mask=true,loadingDuration=1000,time=1;
+	var y=setInterval(function(){
+
+		if(time===0){
+			mask=false;
+			clearInterval(y);
+			// console.log(time);
+			// console.log(mask);
+			return
+		}
+		time=0;
+		// console.log(mask);
+
+	},loadingDuration)
+
+	</script>
+	<body id="top" class=` ${mask}
+                ? 'masking'
+                : ''`>
 
 		<!-- Header -->
 			<header id="header" class="skel-layers-fixed">
@@ -44,6 +66,13 @@
 <h1 id="demo"></h1>
 
 <script>
+
+
+
+
+
+
+
 // Set the date we're counting down to
 var countDownDate = new Date("Oct 10, 2017 00:00:00").getTime();
 // Update the count down every 1 second
@@ -84,7 +113,7 @@ var x = setInterval(function() {
 		<!-- One -->
 			<section id="one" class="wrapper style1">
 				<header class="major">
-					<h2>Ipsum feugiat consequat</h2>
+					<h2>A variaty of scholarship is available</h2>
 					<p>Tempus adipiscing commodo ut aliquam blandit</p>
 				</header>
 				<div class="container">
@@ -92,7 +121,7 @@ var x = setInterval(function() {
 						<div class="4u">
 							<section class="special box">
 								<i class="icon fa-area-chart major"></i>
-								<h3>Justo placerat</h3>
+								<h3>Contact us</h3>
 								<p>Eu non col commodo accumsan ante mi. Commodo consectetur sed mi adipiscing accumsan ac nunc tincidunt lobortis.</p>
 							</section>
 						</div>
@@ -115,7 +144,7 @@ var x = setInterval(function() {
 			</section>
 
 		<!-- Two -->
-			<section id="two" class="wrapper style2">
+			<!-- <section id="two" class="wrapper style2">
 				<header class="major">
 					<h2>Commodo accumsan aliquam</h2>
 					<p>Amet nisi nunc lorem accumsan</p>
@@ -144,10 +173,10 @@ var x = setInterval(function() {
 						</div>
 					</div>
 				</div>
-			</section>
+			</section>-->
 
 		<!-- Three -->
-			<section id="three" class="wrapper style1">
+			<!-- <section id="three" class="wrapper style1">
 				<div class="container">
 					<div class="row">
 						<div class="8u">
@@ -178,10 +207,10 @@ var x = setInterval(function() {
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> -->
 
 		<!-- Footer -->
-			<footer id="footer">
+			<!-- <footer id="footer">
 				<div class="container">
 					<div class="row double">
 						<div class="6u">
@@ -224,7 +253,7 @@ var x = setInterval(function() {
 						<li>Images: <a href="http://unsplash.com">Unsplash</a></li>
 					</ul>
 				</div>
-			</footer>
+			</footer> -->
 
 	</body>
 </html>
