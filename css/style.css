@@ -13,10 +13,9 @@
 
 	body {
 		background: #fff;
+
 	}
-	.masking{
-		opacity: 0;
-	}
+
 	body, input, select, textarea {
 		color: #555f66;
 		font-family: "Roboto", Helvetica, sans-serif;
@@ -64,6 +63,7 @@
 	h2 {
 		font-size: 1.5em;
 		line-height: 1.5em;
+
 	}
 
 	h3 {
@@ -989,8 +989,11 @@
 		padding: 14em 0;
 		text-align: center;
 		position: relative;
-	}
 
+	}
+	#timer{
+	text-shadow: 0.3em  0.3em 0.4em black;
+}
 		#banner:before {
 			content: '';
 			position: absolute;
