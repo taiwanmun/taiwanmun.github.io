@@ -12,6 +12,7 @@
 /* Basic */
 
 	body {
+
 		background: #fff;
 
 	}
@@ -1091,3 +1092,14 @@
 		#footer .icons a {
 			color: #bbb;
 		}
+		/*mask*/
+body{
+	opacity: 0;
+}
+.maskoff{
+	transition: 1s;
+	opacity: 1;
+}
+#element{
+	transition: 0.8s;
+}

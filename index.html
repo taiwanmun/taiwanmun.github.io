@@ -16,6 +16,8 @@
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
 		<script src="js/pilpil.js"></script>
+		<script src="js/main.js"></script>
+		<!-- <script src="js/jquery.scrolly.min.js"></script> -->
 		<noscript>
 			<link rel="stylesheet" href="css/pilpil.css">
 			<link rel="stylesheet" href="css/skel.css" />
@@ -30,7 +32,7 @@
 
 		<!-- Header -->
 			<header id="header" class="skel-layers-fixed">
-				<h1><a href="#">Ion</a></h1>
+				<h1><a href="#">Taiwan model united nations</a></h1>
 				<nav id="nav">
 					<ul>
 						<li><a href="index.html">Home</a></li>
@@ -49,27 +51,27 @@
 <h2 id="timer"></h2>
 <script>
 
-var g=document.querySelector('body');
-g.style.opacity=0;
-g.style.transition='1s';
-// console.log(`${a+b}`);
-var mask=true,loadingDuration=400,time=1;
-var y=setInterval(function(){
-
-	if(time===0){
-		mask=false;
-
-		clearInterval(y);
-		g.style.opacity=1;
-
-		// console.log(time);
-		// console.log(mask);
-		return
-	}
-	time=0;
-	console.log(mask);
-
-},loadingDuration)
+// var g=document.querySelector('body');
+// g.style.opacity=0;
+// g.style.transition='1s';
+// // console.log(`${a+b}`);
+// var mask=true,loadingDuration=700,time=1;
+// var y=setInterval(function(){
+//
+// 	if(time===0){
+// 		mask=false;
+//
+// 		clearInterval(y);
+// 		g.style.opacity=1;
+//
+// 		// console.log(time);
+// 		// console.log(mask);
+// 		return
+// 	}
+// 	time=0;
+// 	console.log(mask);
+//
+// },loadingDuration)
 
 
 
@@ -118,6 +120,7 @@ var x = setInterval(function() {
 
 		<!-- One -->
 			<section id="one" class="wrapper style1">
+				<div id="elements"></div>
 				<header class="major">
 					<h2>A variaty of scholarship is available</h2>
 					<p>Tempus adipiscing commodo ut aliquam blandit</p>
@@ -126,9 +129,10 @@ var x = setInterval(function() {
 					<div class="row">
 						<div class="4u">
 							<section class="special box">
-								<i class="icon fa-area-chart major"></i>
-								<h3>Contact us</h3>
-								<p>Eu non col commodo accumsan ante mi. Commodo consectetur sed mi adipiscing accumsan ac nunc tincidunt lobortis.</p>
+								<!-- <i class="icon fa-area-chart major"></i> -->
+								<a href="https://www.facebook.com/taiwanmun/?fref=ts"><i class="icon fa-facebook major"></i></a>
+								<h3>Facebook Page</h3>
+								<p>Follow us on facebookpage for latest information!</p>
 							</section>
 						</div>
 						<div class="4u">
@@ -216,10 +220,10 @@ var x = setInterval(function() {
 			</section> -->
 
 		<!-- Footer -->
-			<!-- <footer id="footer">
+			 <footer id="footer">
 				<div class="container">
 					<div class="row double">
-						<div class="6u">
+						<!-- <div class="6u">
 							<div class="row collapse-at-2">
 								<div class="6u">
 									<h3>Accumsan</h3>
@@ -240,7 +244,7 @@ var x = setInterval(function() {
 									</ul>
 								</div>
 							</div>
-						</div>
+						</div> -->
 						<div class="6u">
 							<h2>Aliquam Interdum</h2>
 							<p>Blandit nunc tempor lobortis nunc non. Mi accumsan. Justo aliquet massa adipiscing cubilia eu accumsan id. Arcu accumsan faucibus vis ultricies adipiscing ornare ut. Mi accumsan justo aliquet.</p>
@@ -259,7 +263,42 @@ var x = setInterval(function() {
 						<li>Images: <a href="http://unsplash.com">Unsplash</a></li>
 					</ul>
 				</div>
-			</footer> -->
-
+			<!--</footer> -->
+			<script>// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+      &&
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+});</script>
 	</body>
 </html>
