@@ -442,7 +442,7 @@
 			display: inline-block;
 			margin: 0 0 1.25em 0;
 			color: #ffffff;
-			background: #629DD1;
+			background: #f78f1e;
 			width: 3em;
 			height: 3em;
 			font-size: 2em;
@@ -845,7 +845,7 @@
 	}
 
 		.wrapper.style1 {
-			background: #fff;
+			background: #344891;
 			color: #555f66;
 		}
 
@@ -1094,6 +1094,7 @@
 		}
 		/*mask*/
 body{
+	background-color:#34489e;
 	opacity: 1;
 }
 .maskoff{
@@ -1102,4 +1103,17 @@ body{
 }
 #element{
 	transition: 0.8s;
+}
+.committee_topic{
+	color: #f78f1e;
+
+	margin-left: 70px;
+	white-space:nowrap;
+}
+.committee_numb{
+	color: #f78f1e;
+	font-size: 5rem;
+	margin: 0px;
+
+	/*white-space:nowrap;*/
 }
