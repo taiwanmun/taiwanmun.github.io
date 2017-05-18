@@ -48,7 +48,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		
+
 		font-weight: 300;
 		line-height: 1em;
 		margin: 0 0 1em 0;
@@ -1110,11 +1110,19 @@ body{
 }
 
 .topic{
-	font-size: 3rem;
+	font-size: 2rem;
+
 }
+/*organizing team*/
+.team_pic{
 
+	max-width: 100%;
+	height: auto;
+}
 /*/committee*/
-
+.brief_intro{
+	 text-transform: capitalize;
+}
 .committee_topic{
 	margin-top: 7rem;
 	color: #f78f1e;
@@ -1158,7 +1166,9 @@ a{
 	background: #344891
 
 }
-
+.taiwanandmun{
+	height :5.3rem;
+}
 .box{
 	color: #ffffff
 }
