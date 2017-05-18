@@ -28,17 +28,17 @@
 
 
 
-	<body id="top">
+	<body id="homepage">
 
 		<!-- Header -->
 			<header id="header" class="skel-layers-fixed">
-				<h1><a href="#">Taiwan model united nations</a></h1>
+				<h1><a href="#banner">Taiwan model united nations</a></h1>
 				<nav id="nav">
 					<ul>
 						<li><a href="index.html">Home</a></li>
 						<li><a href="left-sidebar.html">Conference</a></li>
 						<li><a href="right-sidebar.html">Committee</a></li>
-						<li><a href="no-sidebar.html">What</a></li>
+
 						<li><a href="https://goo.gl/JSuPi3" class="button special">Sign Up</a></li>
 					</ul>
 				</nav>
@@ -48,82 +48,73 @@
 			<section id="banner" >
 				<div class="inner">
 					<!-- Display the countdown timer in an element -->
-<h2 id="timer"></h2>
-<script>
+								<h2 id="timer"></h2>
+								<script>
 
-// var g=document.querySelector('body');
-// g.style.opacity=0;
-// g.style.transition='1s';
-// // console.log(`${a+b}`);
-// var mask=true,loadingDuration=700,time=1;
-// var y=setInterval(function(){
-//
-// 	if(time===0){
-// 		mask=false;
-//
-// 		clearInterval(y);
-// 		g.style.opacity=1;
-//
-// 		// console.log(time);
-// 		// console.log(mask);
-// 		return
-// 	}
-// 	time=0;
-// 	console.log(mask);
-//
-// },loadingDuration)
-
-
+								// var g=document.querySelector('body');
+								// g.style.opacity=0;
+								// g.style.transition='1s';
+								// // console.log(`${a+b}`);
+								// var mask=true,loadingDuration=700,time=1;
+								// var y=setInterval(function(){
+								//
+								// 	if(time===0){
+								// 		mask=false;
+								//
+								// 		clearInterval(y);
+								// 		g.style.opacity=1;
+								//
+								// 		// console.log(time);
+								// 		// console.log(mask);
+								// 		return
+								// 	}
+								// 	time=0;
+								// 	console.log(mask);
+								//
+								// },loadingDuration)
 
 
+								// Set the date we're counting down to
+								var countDownDate = new Date("Oct 20, 2017 9:00:00").getTime();
+								// Update the count down every 1 second
+								var x = setInterval(function() {
 
+								  // Get todays date and time
+								  var now = new Date().getTime();
 
+								  // Find the distance between now an the count down date
+								  var distance = countDownDate - now;
 
+								  // Time calculations for days, hours, minutes and seconds
+								  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+								  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+								  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+								  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
+								  // Display the result in the element with id="timer"
+								  document.getElementById("timer").innerHTML = days+':'+hours+':'+minutes+':'+seconds ;
 
-
-// Set the date we're counting down to
-var countDownDate = new Date("Oct 20, 2017 9:00:00").getTime();
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get todays date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now an the count down date
-  var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Display the result in the element with id="timer"
-  document.getElementById("timer").innerHTML = days+':'+hours+':'+minutes+':'+seconds ;
-
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("timer").innerHTML = "See You In 2018";
-  }
-}, 1000);
-</script>
+								  // If the count down is finished, write some text
+								  if (distance < 0) {
+								    clearInterval(x);
+								    document.getElementById("timer").innerHTML = "See You In 2018";
+								  }
+								}, 1000);
+								</script>
 					<h2>TAIWAN MODEL UNITED NATION</h2>
-					<p>10/20~10/22<a href="http://templated.co">TEMPLATED</a></p>
+					<p>10/20~10/22</p>
 					<ul class="actions">
 						<!-- <li><a href="#content" class="button big special">Sign Up</a></li> -->
 						<li><a href="https://taiwanmun.kktix.cc/events/0446abff?preview_token=6dc480065ad75d70cc691d5b866ed902" class="button big special">Sign Up</a></li>
-						<li><a href="#elements" class="button big alt">Learn More</a></li>
+						<li><a href="#one" class="button big alt">Learn More</a></li>
 					</ul>
 				</div>
 			</section>
 
 		<!-- One -->
 			<section id="one" class="wrapper style1">
-				<div id="elements"></div>
 				<header class="major">
-					<h2>A variaty of scholarship is available</h2>
+					<h2 style="color: white">A variaty of scholarship is available</h2>
 					<!-- <p>Tempus adipiscing commodo ut aliquam blandit</p> -->
 				</header>
 				<div class="container">
@@ -156,7 +147,7 @@ var x = setInterval(function() {
 			</section>
 
 		<!-- Two -->
-			<section id="two" class="wrapper style2">
+			<!-- <section id="two" class="wrapper style2">
 				<header class="major">
 					<h2>Conference</h2>
 					<p>Amet nisi nunc lorem accumsan</p>
@@ -185,7 +176,7 @@ var x = setInterval(function() {
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> -->
 
 		<!-- Three -->
 			<!-- <section id="three" class="wrapper style1">
@@ -247,7 +238,7 @@ var x = setInterval(function() {
 								</div>
 							</div>
 						</div> -->
-						<div class="6u">
+						<!-- <div class="6u">
 							<h2>Aliquam Interdum</h2>
 							<p>Blandit nunc tempor lobortis nunc non. Mi accumsan. Justo aliquet massa adipiscing cubilia eu accumsan id. Arcu accumsan faucibus vis ultricies adipiscing ornare ut. Mi accumsan justo aliquet.</p>
 							<ul class="icons">
@@ -257,7 +248,7 @@ var x = setInterval(function() {
 								<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
 								<li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
 							</ul>
-						</div>
+						</div> -->
 					</div>
 					<iframe class="kktix" src="https://kktix.com/tickets_widget?slug=0446abff" frameborder="0" height="420" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
 					<ul class="copyright">
