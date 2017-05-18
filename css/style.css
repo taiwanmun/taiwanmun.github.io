@@ -1119,6 +1119,7 @@ body{
 	max-width: 100%;
 	height: auto;
 }
+
 /*.committee{
 	margin-top: 10rem;
 }*/
@@ -1136,7 +1137,7 @@ body{
 
 
 	font-size: 140%;
-	margin-right: 0.4rem;
+	margin-right: 0.2rem;
 
 
 }
@@ -1174,3 +1175,11 @@ a{
 .box{
 	color: #ffffff
 }
+
+skel.breakpoints({
+	xlarge: "(max-width: 1680px)",
+	large:  "(max-width: 1280px)",
+	medium: "(max-width: 980px)",
+	small:  "(max-width: 736px)",
+	xsmall: "(max-width: 480px)"
+});
