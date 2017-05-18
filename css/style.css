@@ -26,7 +26,7 @@
 	}
 
 	a {
-		color: #629DD1;
+		color: #344891;
 
 	}
 
@@ -809,15 +809,16 @@
 		input[type="reset"].special,
 		input[type="button"].special,
 		.button.special {
-			background-color: #629DD1;
-			color: #ffffff !important;
+			background-color: #344891;
+			color: #f7871e !important;
 		}
 
 			input[type="submit"].special:hover,
 			input[type="reset"].special:hover,
 			input[type="button"].special:hover,
 			.button.special:hover {
-				background-color: #76a9d7;
+				background-color: #4b67cc;
+				color: #ffb671
 			}
 
 			input[type="submit"].special:active,
@@ -1028,7 +1029,7 @@
 		}
 
 			#banner .button.alt:hover {
-				background-color: rgba(144, 144, 144, 0.275);
+				background-color: rgba(#f7871e, 0.7);
 			}
 
 			#banner .button.alt:active {
@@ -1127,7 +1128,7 @@ body{
 	 text-transform: capitalize;
 }
 .committee_topic{
-	margin-top: 10rem;
+	margin-top: 7rem;
 	font-size: 1.4rem;
 	color: #f78f1e;
 
@@ -1175,11 +1176,16 @@ a{
 .box{
 	color: #ffffff
 }
+#homepage .box{
+	height: 23rem
+}
+#conference{
+	background-color: #344891;
+	/*padding-right: 7rem;*/
 
-skel.breakpoints({
-	xlarge: "(max-width: 1680px)",
-	large:  "(max-width: 1280px)",
-	medium: "(max-width: 980px)",
-	small:  "(max-width: 736px)",
-	xsmall: "(max-width: 480px)"
-});
+	border-color: #f7871e;
+	border-width: 4px 0px 4px 0px;
+	border-style: dashed;
+
+	margin-top: 2rem;
+}

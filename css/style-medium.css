@@ -75,7 +75,7 @@
 		}
 
 	#navPanel {
-		background: #192024;
+		background: rgb(60, 56, 52);
 		color: #c5c7c8;
 	}
 
@@ -112,4 +112,3 @@
 			#navPanel nav .button {
 				width: 100%;
 			}
-			
