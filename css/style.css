@@ -1110,7 +1110,7 @@ body{
 }
 
 .topic{
-	font-size: 2rem;
+	font-size: 2.2rem;
 
 }
 /*organizing team*/
@@ -1119,30 +1119,32 @@ body{
 	max-width: 100%;
 	height: auto;
 }
-/*/committee*/
+/*.committee{
+	margin-top: 10rem;
+}*/
 .brief_intro{
 	 text-transform: capitalize;
 }
 .committee_topic{
-	margin-top: 7rem;
+	margin-top: 10rem;
+	font-size: 1.4rem;
 	color: #f78f1e;
-	font-size: 2.7rem;
-	margin-down: 30px;
-	margin-right: 70px;
-	white-space:nowrap;
+
+
 }
 .committee_numb{
-	color: #f78f1e;
-	font-size: 3.5rem;
-	margin: 0px;
-	margin-right: 10px;
-	/*white-space:nowrap;*/
+
+
+	font-size: 140%;
+	margin-right: 0.4rem;
+
+
 }
 
 a{
 		text-decoration: none;
 }
-#committee_page+h1{
+/*#committee_page+h1{
 	font-size: 3.3rem;
 	color:#ffffff;
 }
@@ -1151,7 +1153,7 @@ a{
 }
 #committee_page+h4,#committee_page+h5{
 	font-size: 2rem
-}
+}*/
 /*homepage*/
 
 #banner h2{
