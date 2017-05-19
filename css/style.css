@@ -1168,6 +1168,7 @@ a{
 #banner p{
 	color: #ffffff;
 	text-shadow:  0.3em  0.3em 0.4em black;
+	margin-bottom :2rem;
 }
 #one{
 	background: #344891
