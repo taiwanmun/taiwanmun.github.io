@@ -1157,7 +1157,10 @@ a{
 	font-size: 2rem
 }*/
 /*homepage*/
-
+#twmun_img {
+  -webkit-filter: drop-shadow(0.3em  0.3em 0.4em black);
+  filter: drop-shadow(0.3em  0.3em 0.4em black);
+}
 #banner h2{
 	text-shadow: 0.3em  0.3em 0.4em black;
 }
