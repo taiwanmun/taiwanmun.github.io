@@ -4,7 +4,6 @@ $(document).ready(function() {
   var g=document.querySelector('body');
   // g.style.opacity=0;
   // g.style.transition='1s';
-  console.log(`${10+10}`);
   var mask=true,loadingDuration=700,time=1;
   var y=setInterval(function(){
 
@@ -15,7 +14,6 @@ $(document).ready(function() {
   		return
   	}
   	time=0;
-  	console.log(mask);
 
   },loadingDuration)
 

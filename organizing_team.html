@@ -16,10 +16,22 @@
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
 		<script src="js/main.js"></script>
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+
+<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="css/organizing-team.min.css" />
 		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
+			<!-- <link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-xlarge.css" />
+			<link rel="stylesheet" href="css/style-large.css" />
+			<link rel="stylesheet" href="css/style-medium.css" />
+			<link rel="stylesheet" href="css/style-small.css" />
+			<link rel="stylesheet" href="css/style-xsmall.css" /> -->
+
 
 		</noscript>
 		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
@@ -28,10 +40,10 @@
 
 		<!-- Header -->
 			<header id="header" class="skel-layers-fixed">
-				<h1><a href="index.html">TAIWAN MUN</a></h1>
+				<h1 style="font-size:initial"><a href="index.html">TAIWAN MUN</a></h1>
 				<nav id="nav">
 					<ul>
-						<li><a href="index.html">Home</a></li>
+						<li><a href="index.html" id="home">Home</a></li>
 						<li><a href="conference.html">Conference</a></li>
 						<li><a href="committee.html">Comittees</a></li>
 						<li><a href="organizing_team.html">Organizing Team</a></li>
@@ -48,182 +60,196 @@
 					<!-- <h3></h3> -->
 				</header>
 				<div class="container">
-					<div class="row">
-						<div class="4u comittee">
+					<!-- <div class="4u comittee">
 
-							<section>
-								<h4></h4>
-								<ul class="alt">
-									<li><a href="#sg">Secretary General</a></li>
-									<li><a href="#pr">Public Relations</a></li>
-									<li><a href="#acd">Academics</a></li>
-									<li><a href="#mk">Marketing</a></li>
-									<li><a href="#dsn">Designing</a></li>
-									<li><a href="#act">Activity</a></li>
-									<li><a href="#da">Delegate Affairs</a></li>
-									<li><a href="#co">Chief of Operations</a></li>
+						<section>
+							<h4></h4>
+							<ul class="alt">
+								<li><a href="#sg">Secretary General</a></li>
+								<li><a href="#pr">Public Relations</a></li>
+								<li><a href="#acd">Academics</a></li>
+								<li><a href="#mk">Marketing</a></li>
+								<li><a href="#dsn">Designing</a></li>
+								<li><a href="#act">Activity</a></li>
+								<li><a href="#da">Delegate Affairs</a></li>
+								<li><a href="#co">Chief of Operations</a></li>
 
-								</ul>
-							</section>
-						</div>
-						<div class="8u comittee" id = "sg">
-							<h1 class="committee_topic" ><span class='committee_numb'>S</span>ecretary &nbsp General</h1>
-						</div>
-						<div class="4u comittee">
-							<section>
-								<img src="images/organizing_team/sg_1.jpg" class='team_pic'>
-								<h3>Alexandra Cheng</h3>
-								<h3>程祥如</h3>
-							</section>
-						</div>
-						<div class="4u comittee">
-							<section>
+							</ul>
+						</section>
+					</div> -->
+					<div class="row justify-content-center">
+						<div class="col-12 col-sm-8 col-md-6" id="sg">
+							<div class="row">
+								<h1 class="col-lg-12 committee_topic" id = "sg"><span class='committee_numb'>S</span>ecretary General</h1>
+							</div>
+							<div class="row">
+								<div class="col-lg-6">
+									<!-- <div bgm> -->
+									<img src="images/organizing_team/sg_1.jpg" class='team_pic'>
 
-								<img src="images/organizing_team/sg_2.jpg" class='team_pic'>
-								<h3>Christine Wang</h3>
-								<h3>王思晴</h3>
-							</section>
+									<h3>程祥如</h3>
+									<h3>Alexandra Cheng</h3>
+								</div>
+								<div class="col-lg-6 committee">
+									<img src="images/organizing_team/sg_2.jpg" class='team_pic'>
+
+									<h3>王思晴</h3>
+									<h3>Christine Wang</h3>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-6 col-12 department" id="pr">
+							<div class="row">
+								<div class="col-12">
+									<h1 class=" committee_topic">
+										<span class='committee_numb'>P</span>
+									ublic Relation</h1>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-6 member">
+									<img src="images/organizing_team/pr_1.jpg" class='team_pic'>
 
+									<h3>劉惟中</h3>
+									<h3>Ray Liu</h3>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-6 member">
+									<img src="images/organizing_team/pr_2.jpg" class='team_pic'>
+
+									<h3>吳佩宣</h3>
+									<h3 >Sherry Wu</h3>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6 col-12 department" id = "acd">
+							<div class="row">
+								<div class="col-12">
+									<h1 class="committee_topic">
+										<span class='committee_numb'>A</span>
+										cadamics
+									</h1>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-6 member">
+									<img src="images/organizing_team/acd_1.jpg" class='team_pic'/>
+									<h3>王昱翔</h3>
+									<h3>Simon Wang</h3>
+								</div>
+
+								<div class="col-lg-6 col-md-6 col-sm-6 col-6 member">
+									<img src="images/organizing_team/acd_2.jpg" class='team_pic'/>
+									<h3>徐聖凱</h3>
+									<h3>Justin Hsu</h3>
+								</div>
+							</div>
+						</div>
+					</div>
 					<div class="row">
-						<div class="4u comittee" id = "acd">
-							<h1 class="committee_topic" ><span class='committee_numb'>P</span>ublic Relations</h1>
+						<div class="col-lg-6 col-md-6 col-sm-6 col-12 department" id="mk">
+							<div class="row">
+								<div class="col-12">
+									<h1 class=" committee_topic">
+										<span class='committee_numb'>M</span>
+									arketing</h1>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-6 member">
+									<img src="images/organizing_team/mk_1.jpg" class='team_pic'/>
+									<h3>許禮葳</h3>
+									<h3>Wes Hsu</h3>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-6 member">
+									<img src="images/organizing_team/mk_2.jpg" class='team_pic'/>
+									<h3>柳明慧</h3>
+									<h3>Darcy Liu</h3>
+								</div>
+							</div>
 						</div>
-						<div class="4u comittee team_member">
-							<section>
-								<img src="images/organizing_team/pr_1.jpg" class='team_pic'>
-								<h3 >Ray Liu</h3>
-								<h3>劉惟中</h3>
-							</section>
+						<div class="col-lg-6 col-md-6 col-sm-6 col-12 department" id = "dsn">
+							<div class="row">
+								<div class="col-12">
+									<h1 class="committee_topic">
+										<span class='committee_numb'>D</span>
+										esign
+									</h1>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-6 member">
+									<img src="images/organizing_team/dsn_1.jpg" class='team_pic'/>
+									<h3>鍾沁恆</h3>
+									<h3>Alyssa Chung</h3>
+								</div>
+
+								<div class="col-lg-6 col-md-6 col-sm-6 col-6 member">
+									<img src="images/organizing_team/dsn_2.jpg" class='team_pic'/>
+									<h3>胡琦</h3>
+									<h3>Hu Chi</h3>
+								</div>
+							</div>
 						</div>
-						<div class="4u comittee team_member">
-							<section>
-								<img src="images/organizing_team/pr_2.jpg" class='team_pic'>
-								<h3 >Sherry Wu</h3>
-								<h3>吳佩宣</h3>
-							</section>
+					</div>
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-6 col-12 department" id="act">
+							<div class="row">
+								<div class="col-12">
+									<h1 class=" committee_topic">
+										<span class='committee_numb'>A</span>
+									ctivity
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-6 member">
+									<img src="images/organizing_team/act_1.jpg" class='team_pic'/>
+									<h3>沈慶柔</h3>
+									<h3>Kristy Shen</h3>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-6 member">
+									<img src="images/organizing_team/act_2.jpg" class='team_pic'/>
+									<h3>林郁婕</h3>
+									<h3>Joey Lin</h3>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6 col-12 department" id = "da">
+							<div class="row">
+								<div class="col-12">
+									<h1 class="committee_topic">
+										<span class='committee_numb'>D</span>
+										egate Affairs
+									</h1>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-6 member">
+									<img src="images/organizing_team/da_1.jpg" class='team_pic'/>
+									<h3>劉紹宇</h3>
+									<h3>Chuck Liu</h3>
+								</div>
+
+								<div class="col-lg-6 col-md-6 col-sm-6 col-6 member">
+									<img src="images/organizing_team/da_2.jpg" class='team_pic'/>
+									<h3>高丙憲</h3>
+									<h3>Benson Kao</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-lg-6 col-md-6 col-sm-6 col-12 department " id="pr">
+							<div class="row">
+								<div class="col-12">
+									<h1 class=" committee_topic">
+										<span class='committee_numb'>P</span>
+									ublic Relation</h1>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-6 member">
+									<img src="images/organizing_team/co_1.jpg" class='team_pic'>
+									<h3>蘇家萱</h3>
+									<h3>Jessica Su</h3>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-6 member">
+									<img src="images/organizing_team/co_2.jpg" class='team_pic'>
+									<h3>李旻庭</h3>
+									<h3>Minting Lee</h3>
+								</div>
+							</div>
 						</div>
 
 					</div>
-					<div class="row">
-						<div class="4u comittee" id = "acd">
-							<h1 class="committee_topic" ><span class='committee_numb'>A</span>cademics</h1>
-						</div>
-						<div class="4u comittee team_member">
-							<section>
-								<img src="images/organizing_team/acd_1.jpg" class='team_pic'/>
-								<h3>王昱翔</h3>
-								<h3>Simon Wang</h3>
-							</section>
-						</div>
-
-						<div class="4u comittee team_member">
-							<section>
-
-								<img src="images/organizing_team/acd_2.jpg" class='team_pic'/>
-								<h3>徐聖凱</h3>
-								<h3>Justin Hsu</h3>
-							</section>
-						</div>
-
-						<div class="4u comittee" id = "mk">
-							<h1 class="committee_topic" ><span class='committee_numb'>M</span>arketing</h1>
-						</div>
-						<div class="4u comittee team_member">
-							<section>
-								<img src="images/organizing_team/mk_1.jpg" class='team_pic'/>
-								<h3>許禮葳</h3>
-								<h3>Wes Hsu</h3>
-							</section>
-						</div>
-						<div class="4u comittee team_member">
-							<section>
-
-								<img src="images/organizing_team/mk_2.jpg" class='team_pic'/>
-								<h3>柳明慧</h3>
-								<h3>Darcy Liu</h3>
-							</section>
-						</div>
-
-
-						<div class="4u comittee" id = "dsn">
-							<h1 class="committee_topic" ><span class='committee_numb'>D</span>esigning</h1>
-						</div>
-						<div class="4u comittee team_member">
-							<section>
-								<img src="images/organizing_team/dsn_1.jpg" class='team_pic'/>
-								<h3>鍾沁恆</h3>
-								<h3>Alyssa Chung</h3>
-							</section>
-						</div>
-						<div class="4u comittee team_member">
-							<section>
-								<img src="images/organizing_team/dsn_2.jpg" class='team_pic'/>
-								<h3>胡琦</h3>
-								<h3>Hu Chi</h3>
-							</section>
-						</div>
-
-						<div class="4u comittee" id = "act">
-							<h1 class="committee_topic" ><span class='committee_numb'>A</span>ctivity</h1>
-						</div>
-						<div class="4u comittee team_member">
-							<section>
-								<img src="images/organizing_team/act_1.jpg" class='team_pic'/>
-								<h3>沈慶柔</h3>
-								<h3>Kristy Shen</h3>
-							</section>
-						</div>
-						<div class="4u comittee team_member">
-							<section>
-								<img src="images/organizing_team/act_2.jpg" class='team_pic'/>
-								<h3>林郁婕</h3>
-								<h3>Joey Lin</h3>
-							</section>
-						</div>
-
-
-						<div class="4u comittee" id = "da">
-							<h1 class="committee_topic" ><span class='committee_numb'>D</span>elegate Affairs</h1>
-						</div>
-						<div class="4u comittee team_member">
-							<section>
-								<img src="images/organizing_team/da_1.jpg" class='team_pic'/>
-								<h3>劉紹宇</h3>
-								<h3>Chuck Liu</h3>
-							</section>
-						</div>
-						<div class="4u comittee team_member">
-							<section>
-								<img src="images/organizing_team/da_2.jpg" class='team_pic'/>
-								<h3>高丙憲</h3>
-								<h3>Benson Kao</h3>
-							</section>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="4u comittee" id = "co">
-							<h1 class="committee_topic" ><span class='committee_numb'>C</span>hief of Operations</h1>
-						</div>
-						<div class="4u comittee team_member">
-							<section>
-								<img src="images/organizing_team/co_1.jpg" class='team_pic'>
-								<h3>蘇家萱</h3>
-								<h3>Jessica Su</h3>
-							</section>
-						</div>
-						<div class="4u comittee team_member">
-							<section>
-								<img src="images/organizing_team/co_2.jpg" class='team_pic'>
-								<h3>李旻庭</h3>
-								<h3>Minting Lee</h3>
-							</section>
-						</div>
-
-					</div>
+				</div>
 
 
 
