@@ -13,7 +13,7 @@
 		<script src="js/main.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
-
+		<!-- googlemap API -->
 		<link rel="stylesheet" href="css/conference.min.css" />
 
 		<!-- <noscript>
@@ -71,7 +71,7 @@
 							    </tr>
 								<tr>
 									<th scope="row">13:30-17:00</th>
-									<td>Session 1</td>
+									<td>Session 1(Villa Party)</td>
 							  	<tr>
 								  <th scope="row">18:30-21:30</th>
 								  <td>Social Event 1</td>
@@ -124,7 +124,77 @@
 							</table>
 						</div>
 					</div>
+
+					<div class="socialEvent">
+						<div class="row">
+							<div class="col-md-6">
+								<h4 class="SEtopic">Social Event(Day 1)</h4>
+								<div class="SEpic">
+									<img src="images/HT.jpg"  width="50%"  style="display: block;margin: auto;"/>
+								</div>
+								<h6>厚醍料理</h6>
+								<h6>Address:</h6>
+								<p>&nbsp; 新竹市香山區延平路二段450號<br>
+								&nbsp; No.450, Sec. 2, Yanping Rd., Xiangshan Dist., Hsinchu City</p>
+								<h6>Transportation:</h6>
+								<p>&nbsp;Suggested to go by taxi, which will cost around NT.240 to be shared by 4.</p>
+								<h6>Dress code:</h6>
+								<p>&nbsp;Your most luxurious or elegant clothes</p>
+								<p style="color: red">Notice</br>Please refer to the "Food Map" for dining options and arrive at the social event location by 18:30</p>
+
+								<div id="googleMap1" style="width:100%;padding-top:100%"></div>
+
+							</div>
+							<div class="col-md-6">
+
+								<h4 class="SEtopic">Social Event(Day 2)</h4>
+								<div class="SEpic">
+									<img src="images/Haven.jpg" width="50%" style="display: block;margin: auto;"/>
+								</div>
+								<h6>Haven bar</h6>
+								<h6>Address:</h6>
+								<p>&nbsp;300新竹市東區中正路96巷8號B1<br>
+								&nbsp;B1., No.8-B, Ln. 96, Zhongzheng Rd., East Dist., Hsinchu City</p>
+								<h6>Transportation:</h6>
+								<p>&nbsp;Suggested to go by taxi, which will cost around NT.200 to be shared by 4.</p>
+								<h6>Dress code:</h6>
+								<p>&nbsp;Colorful clothes or fantasy accessories</p>
+								<p style="color: red">Notice</br>Please refer to the "Food Map" for dining options and arrive at the social event location by 20:00. The event will end at 23:00</p>
+
+								<div id="googleMap2" style="width:100%;padding-top:100%"></div>
+
+							</div>
+						</div>
+					</div>
+					<div>
 				</div>
+				<script>
+					function myMap() {
+					var position1 = new google.maps.LatLng(24.806943,120.930080)
+					var mapProp1= {
+					    center:position1,
+					    zoom:16,
+					};
+					var map1=new google.maps.Map(document.getElementById("googleMap1"),mapProp1);
+					var marker1 = new google.maps.Marker({position: position1});
+					marker1.setMap(map1);
+
+
+					var position2 = new google.maps.LatLng(24.805559,120.969983)
+					var mapProp2= {
+						center:new google.maps.LatLng(24.805559,120.969983),
+						zoom:16,
+					};
+					var map2=new google.maps.Map(document.getElementById("googleMap2"),mapProp2);
+					var marker2 = new google.maps.Marker({position: position2});
+					marker2.setMap(map2);
+
+					}
+
+
+					</script>
+				<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDk8s8oArWxYGDvaORqx8SryGzhY9p2sB0&callback=myMap"></script>
+
 								<!-- <h2>To be announced.....</h2>
 								<p>Conference date : 2017/10/20~2017/10/22</p>
 								<p>Early Registration : 2017/5/19~2017/7/16</p>
