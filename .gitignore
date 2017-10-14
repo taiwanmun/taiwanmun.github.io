@@ -1,1 +1,4 @@
 /right-sidebar.html
+*.sass
+.sass-cache/
+*.css.map
