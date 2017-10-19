@@ -1193,3 +1193,10 @@ a{
 
 	margin-top: 2rem;
 }
+.country_list{
+	animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% { opacity: 0; }
+}
