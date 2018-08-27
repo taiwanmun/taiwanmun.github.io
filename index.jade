@@ -1,0 +1,248 @@
+//output: index.html
+<!DOCTYPE HTML>
+html
+  head
+    title 2018 TWMUN
+    meta(name='google-site-verification', content='FBaEaFKAv4l15HMRcA4jmoh2BvlkosfNvF6x3DFlivM')
+    meta(http-equiv='content-type', content='text/html; charset=utf-8')
+    meta(name='description', content='Official site of TWMUN(TAIWAN MODEL UNITED NATION)')
+    meta(name='keywords', content='TWMUN')
+    meta(name="viewport" content="width=device-width")
+    //if lte IE 8
+    //- script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')
+    script(src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous")
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q', crossorigin='anonymous')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js')
+    script(src='main.js')
+    // favicon
+    link(rel='apple-touch-icon', sizes='180x180', href='img/favicon_package/apple-touch-icon.png')
+    link(rel='icon', type='image/png', sizes='32x32', href='img/favicon_package/favicon-32x32.png')
+    link(rel='icon', type='image/png', sizes='16x16', href='img/favicon_package/favicon-16x16.png')
+    link(rel='manifest', href='img/favicon_package/site.webmanifest')
+    link(rel='mask-icon', href='img/favicon_package/safari-pinned-tab.svg', color='#5bbad5')
+    link(rel="shortcut icon" href="img/favicon_package/favicon.ico" type="image/x-icon")
+    meta(name='msapplication-TileColor', content='#da532c')
+    meta(name='theme-color', content='#ffffff')
+    
+    
+    //- link(rel='apple-touch-icon', sizes='57x57', href='img/favicons/apple-icon-57x57.png')
+    //- link(rel='apple-touch-icon', sizes='60x60', href='img/favicons/apple-icon-60x60.png')
+    //- link(rel='apple-touch-icon', sizes='72x72', href='img/favicons/apple-icon-72x72.png')
+    //- link(rel='apple-touch-icon', sizes='76x76', href='img/favicons/apple-icon-76x76.png')
+    //- link(rel='apple-touch-icon', sizes='114x114', href='img/favicons/apple-icon-114x114.png')
+    //- link(rel='apple-touch-icon', sizes='120x120', href='img/favicons/apple-icon-120x120.png')
+    //- link(rel='apple-touch-icon', sizes='144x144', href='img/favicons/apple-icon-144x144.png')
+    //- link(rel='apple-touch-icon', sizes='152x152', href='img/favicons/apple-icon-152x152.png')
+    //- link(rel='apple-touch-icon', sizes='180x180', href='img/favicons/apple-icon-180x180.png')
+    //- link(rel='icon', type='image/png', sizes='192x192', href='img/favicons/android-icon-192x192.png')
+    //- link(rel='icon', type='image/png', sizes='32x32', href='img/favicons/favicon-32x32.png')
+    //- link(rel='icon', type='image/png', sizes='96x96', href='img/favicons/favicon-96x96.png')
+    //- link(rel='icon', type='image/png', sizes='16x16', href='img/favicons/favicon-16x16.png')
+    //- link(rel='manifest', href='img/favicons/manifest.json')
+    //- meta(name='msapplication-TileColor', content='#ffffff')
+    //- meta(name='msapplication-TileImage', content='/ms-icon-144x144.png')
+    //- meta(name='theme-color', content='#ffffff')
+    //
+    
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css')
+    link(rel='stylesheet', href='style.nested.css')
+    link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.1.0/css/all.css", integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt", crossorigin="anonymous")
+  body#skrollr-body
+    nav.navbar.navbar-expand-sm.navbar-top.fixed-top
+      .container-fluid
+        button.navbar-toggler.navbar-toggler-right(type="button" data-toggle="collapse" data-target="#navbarNav")
+          span
+            i.fas.fa-bars
+        p.navbar-brand#navbar-brand(href="#" style="font-weight: bolder; font-size: 30px; margin-bottom: 0px")
+          img#logo(src="img/logo.png")
+        #navbarNav.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item
+              a.nav-link(href="#anchor_comm") Commitee
+            li.nav-item
+              a.nav-link(href="#anchor_se") Social Events
+            li.nav-item
+              a.nav-link(href="https://goo.gl/forms/Yl0KnkSdIF2e66y93") Sign Up
+            //- li.nav-item
+            //-   a.nav-link(href="#section_map") 
+            li.nav-item
+              a.nav-link(href="#secion_contact") Contact Us
+    
+      //- nav.navbar.navbar-expand-lg.navbar-light.bg-light
+      //-   a.navbar-brand(href='#') Navbar w/ text
+      //-   button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarText', aria-controls='navbarText', aria-expanded='false', aria-label='Toggle navigation')
+      //-     span.navbar-toggler-icon
+      //-   #navbarText.collapse.navbar-collapse
+      //-     ul.navbar-nav.mr-auto
+      //-       li.nav-item.active
+      //-         a.nav-link(href='#')
+      //-           | Home 
+      //-           span.sr-only (current)
+      //-       li.nav-item
+      //-         a.nav-link(href='#') Features
+      //-       li.nav-item
+      //-         a.nav-link(href='#') Pricing
+      //-     span.navbar-text
+      //-       | Navbar text with an inline element
+    //- .jumbotron.jumbotron-fluid.section
+    section#section_header.header
+      .container
+        img#sun(src="img/sun.svg" data-0="transform: translateX(-50%) translateY(0%);",
+        data-600="transform: translateX(-50%) translateY(40%);")
+        img.mountain(src="img/mountain.svg" , data-0="transform: translateX(-50%) translateY(0%);",
+        data-600="transform: translateX(-50%) translateY(40%);")
+        img.mountain#mountain2(src="img/mountain2.svg" , data-0="transform: translateX(-50%) translateY(0%);",
+        data-600="transform: translateX(-50%) translateY(20%) ;")
+        h1#year2018(src="img/mountain.svg" , data-0="transform: translateX(0%) translateY(10%);",
+        data-600="transform: translateX(0%) translateY(-30%);") TWMUN
+        h4#date Session Duration 2018.10.26 ~ 2018.10.28
+          br
+          | Registration Until 9.30
+        p#date We have set a limited number for high school student application.
+        a(href = 'https://goo.gl/forms/Yl0KnkSdIF2e66y93')
+          div#sign_up
+            p Sign Up
+        div#learn_more
+          
+            
+        
+        //- h4 Early Registration Until 6/30
+        //- h5 College and Senior high students are Welcomed
+        
+        //- img#taiwan_img(src="img/taiwan.svg")
+    //- .mynavbar
+    //-   .circle#circle1
+    //-   .circle#circle2
+    //-     //- a(href = "organizigteam")
+    //-     div 
+    //-       i.fas.fa-calendar-alt
+    //-   .circle#circle3
+    
+    // Display the countdown timer in an element
+    
+    //- h2#timer
+    //- script.
+    //-   // Set the date we're counting down to
+    //-   var countDownDate = new Date("Oct 26, 2018 9:00:00").getTime();
+    //-   // Update the count down every 1 second
+    //-   var x = setInterval(function() {
+    //-   // Get todays date and time
+    //-   var now = new Date().getTime();
+    //-   // Find the distance between now an the count down date
+    //-   var distance = countDownDate - now;
+    //-   // Time calculations for days, hours, minutes and seconds
+    //-   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    //-   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    //-   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    //-   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    //-   // Display the result in the element with id="timer"
+    //-   document.getElementById("timer").innerHTML = days+':'+hours+':'+minutes+':'+seconds ;
+    //-   // If the count down is finished, write some text
+    //-   if (distance < 0) {
+    //-   clearInterval(x);
+    //-   document.getElementById("timer").innerHTML = "See You In 2018";
+    //-   }
+    //-   }, 1000);
+
+    
+    
+    /////
+    section#section_intro
+      .container
+        .row
+          .col-lg-9.col-md-8.col-7#mun_discription
+            h3 Model United Nations
+            h4 Today the conference, tomorrow the world.
+            p. 
+              Model United Nations is a student conference with the aim of bringing the negotiations and experience of a real UN conference to life.
+              Academically, we not only aim to simulate the United Nations and grant our delegates the opportunity to expand their global views and leadership talents, but also cultivate a new generation of young innovators ready to become the present of the future.
+          .col-lg-3.col-md-4.col-5#taiwan_logo
+            img(src='img/logo.svg', alt='')#mun_logo
+          .col-lg-2.col-md-3.col-4#taiwan_logo
+            img(src='img/taiwan.svg', alt='')
+          .col-lg-10.col-md-9.col-8#twmun_discription
+            h3 "Taiwan" Model United Nations
+            h4 We came, we saw, we TWMUN.
+            p.
+              TWMUN is co-founded by National Chiao Tung University MUN and National Tsing Hua University MUN, and is also meant to symbolize a close cooperation between the two schools in the realm of international affairs.
+              Undergraduate and graduate students gather for three days to discuss, debate, and to solve a variety of current global and local issues. TWMUN brings annually special committees to expand the learning horizons of our delegates.
+
+    #anchor_comm
+    section#section_committee
+      //- #anchor_comm
+      h2#comm_topic Committees
+      .comm_discript
+
+      .container
+        p TWMUN 2018 featuring 5 committees, including topic of the year, UNCSW—Commission on the Status of Women and special committee Crisis—Wizengamot of Harry Potter.
+
+        .row.justify-content-center
+          .col-lg-4.col-6#unsc
+            img.comm_logo(src="img/logos/unsc.png")
+          .col-lg-4.col-6#disec
+            img.comm_logo(src="img/logos/disec.png")
+          .col-lg-4.col-6#uncsw
+            img.comm_logo(src="img/logos/uncsw.png")
+          .col-lg-4.col-6#unhcr
+            img.comm_logo(src="img/logos/unhcr.png")
+          .col-lg-4.col-6#crisis
+            img.comm_logo(src="img/logos/crisis.png")
+          
+        #comm_content_box
+          
+          .comm_content#unsc_content
+            h4 UNSC
+            p United Nations Security Council (UNSC) is one of the six main organs established under the UN Charter. The mandate of UNSC is to maintain international peace and security. While other organs can only give recommendations to member states, the Council has the power to make decisions that member states are obliged to implement under the Charter, implying that the Council could take further actions whenever peace is threatened. The situation in the Middle East has already been a crucial issue nowadays, the events seldom as fascinating to watch, as well as challenging to comprehend with news reports we receive from the region every day. One of the most notable issues in the region is terrorism. Though actions have been taken in this area, still more and more extreme terrorist groups are popping up, triggering incidents and causing insecurity around the world. To understand the situation of this region, we shall divide the problem into several different aspects and discuss. This year, unlike other regular MUN UNSCs, TWMUN made a UN4MUN approach on our UNSC committee. UN4MUN is so far the best simulation of the real UN. Delegates would be reaching consensus, working on all kinds of documents other than resolution in the UNSC, and experiencing the whole working procedure of the UNSC. We kindly welcome all the delegates to participate in our committee and discuss the issue in the Middle East.
+            h4 PRIORITY THEME
+            h5 Situation in the Middle East
+            
+          .comm_content#disec_content
+            h4 DISEC
+            p The Disarmament and International Security Committee (DISEC) was established in 1993. It is the First and one of the main committees of the General Assembly. DISEC deals with issues regarding the promotion, establishment, and subsequent maintenance of global peace while simultaneously working to prevent weapons proliferation. The mandate of DISEC is stated under the United Nations Charter, “The General Assembly may consider the general principles of cooperation in the maintenance of international peace and security, including the principles governing disarmament and the regulation of armaments and may make recommendations with regard to such principles to the Members or to the Security Council or to both”. With the increase of weapons and growing security threats, DISEC continues to grow in importance and becomes a significant part of resolving international crises.
+            h4 TOPICs
+            h5 A. The Illicit Trade Of Small Arms And Light Weapons
+            h5 B. Cyber Warfare And The Role Of Internet In Conflict
+            
+          .comm_content#uncsw_content
+            h4 UNCSW
+            p The United Nations Commission on the Status of Women(UNCSW) is held every year at the UN Headquarters, New York. Under the current methods of work, the Commission “addresses emerging issues, trends, focus areas and new approaches to questions affecting the situation of women, that require timely consideration” in each session. In this conference, we will be focusing our discussion on banning the long practiced Female Genital Mutilation (FGM), and moderating general principals for gender bias laws, policies and programmes to follow. FGM is a destructive operation practiced on female genitals mostly in African countries, which later put those women in great danger during labor or even between sexual interactions. According to WHO, 200 million women worldwide are affected by FGM. While there are plenty of countries working on making their laws and policies gender neutral, and some trying to secure women’s long oppressed rights through amending them, many countries are still inactive nor do they recognize the need to change current situation. The world has been witnessing the uprising voice of women everywhere. Yet, there are still women who remained silence. Sometimes, it’s simply because they don’t know they have a voice. We welcome both male and female delegates to participate in our committee, because we can’t achieve gender equality when only half of the world’s invited.
+            h4 PRIORITY THEME:
+            p Reinforcing The Ban On Fgm, Gender-sensitive Policies, Laws And Programmes In Countries.
+            
+          .comm_content#unhcr_content
+            h4 UNHRC
+            p UNHCR, the UN Refugee Agency, is a global organization dedicated to saving lives, protecting rights and building a better future for refugees, forcibly displaced communities and stateless people. Work to ensure that everybody has the right to seek asylum and find safe refuge, having fled violence, persecution, war or disaster at home. Since 1950, UNHCR has faced multiple crises on multiple continents, and provided vital assistance to refugees, asylum-seekers, internally displaced and stateless people, many of whom have nobody left to turn to. As an organization, which help to save lives and build better futures for millions forced from home. It elaborates five core directions on which UNHCR will focus – protection; responding in emergencies and beyond; promoting inclusion and self-reliance, including through the engagement of development actors; the empowerment of the people UNHCR serves; and the pursuit of solutions.
+          
+          .comm_content#crisis_content
+            h4 CRISIS–Wizengamot
+            p The Wizengamot is wizarding Britain's high court of law and parliament. The administrative headquarters are located in the Department of Magical Law Enforcement of the Ministry of Magic, while the trials take place in the dungeons of the lower levels. It has the function of a normal court and parliament combined. Laws and decrees are passed and sanctioned by the Wizengamot, and also wizard trials (similar to our muggle one with the defendants and barristers) are prosecuted in this committee.
+          svg#toggle_button(viewbox="-11 -11 22 22")
+            //- circle(cx=0 cy=0 r=8 stroke='black' stroke-width='0.4' fill='transparent')
+            line(x1=-10 y1=10 x2=0.2 y2=-0.2 )
+            line(x1=-10 y1=0 x2=0.2 y2=-10.2 )
+            line(x1=-0.2 y1=-0.2 x2=10 y2=10 )
+            line(x1=-0.2 y1=-10.2 x2=10 y2=0 )
+        //- line()
+        //- line()
+        //- line()
+        //- rect(x='15', y='15', width='20', height='10', fill='white')
+    section#section_se
+      #anchor_se
+      .container-fluid
+        .row
+          //- h2 Social Events
+          .col-lg-6.col-12#lalaland
+            .img_container
+              img#lalaland_pic(src="img/lalaland.png")
+              img#lalaland_word(src="img/lalaland_word.png")
+
+          .col-lg-6.col-12(style="font-size:100px") TBA
+          
+    section#section_footer
+      //- .container-fluid
+      p @twmun2018
+        
+      
+      
+  
