@@ -31,6 +31,9 @@ nav.navbar {
 		nav.navbar #logo {
 				width: 60px; }
 		@media all and (max-width: 575.98px) {
+				nav.navbar .navbar-nav {
+						position: absolute; } }
+		@media all and (max-width: 575.98px) {
 				nav.navbar .nav-item {
 						padding: 0px 10px;
 						width: 120px;
