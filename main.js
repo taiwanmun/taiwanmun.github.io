@@ -19,7 +19,6 @@ function hideAll(c){
   });
 }
 $(function(){
-  /////smooth scroll (seems not working)
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
           e.preventDefault();
@@ -28,7 +27,6 @@ $(function(){
           });
       });
   });
-  //// scollr( parallax animation)
   var scrollr_funtion = 0;
   if($(window).width()> 760){
     var s = skrollr.init({
@@ -62,7 +60,7 @@ $(function(){
 
   $(window).scroll(function(){
     // console.log($('#section_committee').offset().top-100)
-    if($(this).scrollTop() >= $('#section_intro').offset().top-100){
+    if($(this).scrollTop() >= $('#section_committee').offset().top-100){
       $('.navbar').css({
         "background-color": "white"
       });
@@ -78,6 +76,7 @@ $(function(){
         'transition': '1.3s',
         'transform': 'translateY(0px)'
       })
+      // console.log("hah")
     }
     else{
       $('#section_intro *').css({
