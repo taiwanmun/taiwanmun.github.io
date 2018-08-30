@@ -10,6 +10,9 @@
 		position: relative;
 		box-sizing: border-box; }
 
+.hidden {
+		display: none; }
+
 body {
 		background-color: #eeeeee;
 		font-family: Avenir;

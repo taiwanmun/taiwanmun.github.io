@@ -55,8 +55,10 @@ $(function(){
   //     scrollr_funtion = 0;
   //   }
   // });
-
-
+// hide the body until finish loading the entire page
+  $(document).ready(function() {
+      $("body.hidden").removeClass("hidden");
+  });
 
   $(window).scroll(function(){
     // console.log($('#section_committee').offset().top-100)
