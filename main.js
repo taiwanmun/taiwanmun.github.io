@@ -147,6 +147,6 @@ $(function(){
         $("body.hidden").fadeIn("slow", function(){
         });
       },800);
-      // $("body.hidden").removeClass("hidden");
+      $("body.hidden").removeClass("hidden");
   });
 });
