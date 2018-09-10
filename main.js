@@ -146,7 +146,7 @@ $(function(){
       setTimeout(function(){
         $("body.hidden").fadeIn("slow", function(){
         });
-      },300);
+      },0);
       $("body.hidden").removeClass("hidden");
   });
 });
