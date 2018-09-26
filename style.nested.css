@@ -181,20 +181,20 @@ section#section_se h2 {
 		left: 50%;
 		transform: translateX(-50%); }
 
-section#section_se #lalaland {
+section#section_se .se {
 		padding: 0;
 		overflow: hidden; }
-		section#section_se #lalaland .img_container {
+		section#section_se .se .img_container {
 				width: 100%;
 				padding-bottom: 100%; }
-				section#section_se #lalaland .img_container img {
+				section#section_se .se .img_container img {
 						width: 100%;
 						height: 100%;
 						position: absolute; }
-				section#section_se #lalaland .img_container #lalaland_pic {
+				section#section_se .se .img_container #lalaland_pic, section#section_se .se .img_container #bleedinglove_pic {
 						transform: scale(1, 1);
 						transition: 0.3s; }
-				section#section_se #lalaland .img_container #lalaland_word {
+				section#section_se .se .img_container #lalaland_word {
 						transform: scale(0.8, 0.8);
 						transition: 0.3s; }
 
@@ -205,6 +205,14 @@ section#section_se #lalaland:hover #lalaland_pic {
 
 section#section_se #lalaland:hover #lalaland_word {
 		transform: scale(1, 1);
+		transition: 0.3s; }
+
+section#section_se #blood {
+		transform: translateY(-10%);
+		transition: 2s; }
+
+section#section_se #bleedinglove:hover #blood {
+		transform: translateY(0%);
 		transition: 0.3s; }
 
 section#section_footer {
